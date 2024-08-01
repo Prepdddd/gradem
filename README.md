@@ -1,6 +1,6 @@
-# Rate My Professor Site
+# Grade-Em Site
 
-This is a simple static website to rate schools and professors, inspired by "Rate My Professor." It is built using HTML, CSS, and JavaScript.
+This is the complete static website for "Grade-Em", built using HTML, CSS, and JavaScript, with a Node.js backend for handling suggestions.
 
 ## Project Structure
 
@@ -13,18 +13,32 @@ This is a simple static website to rate schools and professors, inspired by "Rat
 |-- js/
 |   |-- main.js
 |   |-- data.js
+|-- suggestions.txt (for suggested schools)
 |-- README.md
 ```
 
 ## How to Run
 
-1. Clone the repository.
-2. Open `index.html` in a web browser to view the site.
+1. **Frontend**: Open `index.html` in a web browser to view the site.
+2. **Backend**: Run the Node.js server to handle school suggestions.
 
-Currently, the site uses static data defined in `js/data.js`. Reviews and comments are not saved; they are for demonstration purposes.
+## Features
+
+- **Suggest a School**: Users can suggest new schools to be added.
+- **Review Professors**: Users can leave reviews for professors on various criteria.
 
 ## Future Enhancements
 
-- Implement a backend to store and retrieve real reviews.
-- Add authentication for administrators to approve reviews.
-- Improve the user interface and add more features.
+- Implement a database to store real-time reviews and suggestions.
+- Admin panel for approving or rejecting suggestions and reviews.
+- Improved styling and mobile responsiveness.
+
+## Backend Server
+
+To run the backend server, navigate to the backend directory and run:
+
+```
+node server.js
+```
+
+Ensure you have Node.js installed and configured properly.
