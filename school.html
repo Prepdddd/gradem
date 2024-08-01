@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>School Ratings</title>
+</head>
+<body>
+  <header>
+    <h1>Rate My School</h1>
+  </header>
+  <main>
+    <h2 id="school-name">School Name</h2>
+    <section id="professor-list">
+      <h3>Professors</h3>
+      <ul id="professors">
+        <!-- Professor list goes here -->
+      </ul>
+    </section>
+    <section id="reviews">
+      <h3>Reviews</h3>
+      <ul id="review-list">
+        <!-- Reviews go here -->
+      </ul>
+    </section>
+    <section id="new-review">
+      <h3>Leave a Review</h3>
+      <form id="review-form">
+        <label for="professor">Professor:</label>
+        <input type="text" id="professor" name="professor" required><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea><br>
+        <label for="teaching">Teaching:</label>
+        <input type="number" id="teaching" name="teaching" min="1" max="5" required><br>
+        <label for="grading">Grading:</label>
+        <input type="number" id="grading" name="grading" min="1" max="5" required><br>
+        <label for="availability">Availability:</label>
+        <input type="number" id="availability" name="availability" min="1" max="5" required><br>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rate My School</p>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
